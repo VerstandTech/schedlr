@@ -5,7 +5,7 @@
 ### Installation
 
 ```bash
-npm install schedular
+npm install schedlr
 ```
 
 ### Usage
