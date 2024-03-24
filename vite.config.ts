@@ -14,7 +14,7 @@ export default defineConfig({
       input: path.resolve('./src/index.ts'),
       output: {
         format: 'esm',
-        entryFileNames: 'index.dist.js',
+        entryFileNames: 'index.js',
         dir: './'
       }
     }
