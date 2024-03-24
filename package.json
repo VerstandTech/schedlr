@@ -1,5 +1,5 @@
 {
-  "name": "schedular",
+  "name": "schedlr",
   "author": "Leonardo Ribeiro <leoribeiro.dsgn@gmail.com>",
   "description": "Simple schedule library made with typescript.",
   "license": "MIT",

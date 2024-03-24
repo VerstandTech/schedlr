@@ -11,7 +11,7 @@ npm install schedular
 ### Usage
 
 ```typescript
-import { Schedule, ScheduleConfiguration, WeekDays, Appointment } from 'schedular';
+import { Schedule, ScheduleConfiguration, WeekDays, Appointment } from 'schedlr';
 
 const config = new ScheduleConfiguration(
   [
