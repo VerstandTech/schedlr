@@ -1,5 +1,5 @@
-import ScheduleConfiguration from "@/domains/schedule/entities/ScheduleConfiguration";
-import Appointment from "@/domains/schedule/entities/Appointment";
+import { ScheduleConfiguration } from "@/domains/schedule/entities/ScheduleConfiguration";
+import { Appointment } from "@/domains/schedule/entities/Appointment";
 import dayjs from "@/lib/dayjs";
 import plugin from "dayjs/plugin/utc";
 
