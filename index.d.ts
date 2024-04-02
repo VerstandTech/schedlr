@@ -1,7 +1,5 @@
-/// <reference path="./src/index.ts" />
-
 export class ScheduleConfiguration {
-  constructor(
+  constructor (
     workingDays: number[],
     workingHoursStart: string,
     workingHoursEnd: string,
@@ -9,11 +7,11 @@ export class ScheduleConfiguration {
     breakHoursEnd: string,
   )
 
-  getWorkingDays(): number[]
-  getWorkingHoursStart(): string
-  getWorkingHoursEnd(): string
-  getBreakHoursStart(): string
-  getBreakHoursEnd(): string
+  getWorkingDays (): number[]
+  getWorkingHoursStart (): string
+  getWorkingHoursEnd (): string
+  getBreakHoursStart (): string
+  getBreakHoursEnd (): string
 }
 
 export const WeekDays = {
@@ -23,20 +21,20 @@ export const WeekDays = {
   WEDNESDAY: 3,
   THURSDAY: 4,
   FRIDAY: 5,
-  SATURDAY: 6,
+  SATURDAY: 6
 }
 
 export class Appointment {
-  constructor(startTime: Date, duration: string)
+  constructor (startTime: Date, duration: string)
 
-  get date(): Date
-  set date(value: Date): void
-  get endTime(): Date
-  get duration(): string
+  get date (): Date
+  set date (value: Date): void
+  get endTime (): Date
+  get duration (): string
 }
 
 export class Schedule {
-  constructor(config: ScheduleConfiguration)
-  getAvailableTimeSlots(appointment: Appointment): string[]
-  addAppointment(appointment: Appointment): void
+  constructor (config: ScheduleConfiguration)
+  getAvailableTimeSlots (appointment: Appointment): string[]
+  addAppointment (appointment: Appointment): void
 }
