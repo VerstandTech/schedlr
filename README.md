@@ -1,6 +1,6 @@
 ## Getting started
 
-`Schedular` is a simple scheduling library for javascript / typescript. It allows you to create schedules programmatically and extend them with your application logic.
+`Schedlr` is a simple scheduling library for javascript / typescript. It allows you to create schedules programmatically and extend them with your application logic.
 
 ### Installation
 
