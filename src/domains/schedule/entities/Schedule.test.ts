@@ -26,36 +26,30 @@ test("Schedule", () => {
 
   const appointment = new Appointment(new Date('2024-03-25T08:00'), '02:00')
   const availableTime = scheduler.getAvailableTimeSlots(appointment)
-  console.log(availableTime)
   expect(availableTime).toEqual(['08:00', '10:00', '14:00', '16:00'])
 
   const appointment2 = new Appointment(new Date('2024-03-25T08:00'), '01:00')
   scheduler.addAppointment(appointment2)
   const availableTime2 = scheduler.getAvailableTimeSlots(appointment2)
-  console.log(availableTime2)
   expect(availableTime2).toEqual(['09:00', '10:00', '11:00', '14:00', '15:00', '16:00', '17:00'])
 
   const appointment3 = new Appointment(new Date('2024-03-25T08:00'), '03:00')
   scheduler.addAppointment(appointment3)
   const availableTime3 = scheduler.getAvailableTimeSlots(appointment3)
-  console.log(availableTime3)
   expect(availableTime3).toEqual(['14:00', '17:00'])
 
   const appointment4 = new Appointment(new Date('2024-03-25T17:00'), '01:00')
   scheduler.addAppointment(appointment4)
   const availableTime4 = scheduler.getAvailableTimeSlots(appointment4)
-  console.log(availableTime4)
   expect(availableTime4).toEqual(['11:00', '14:00', '15:00', '16:00'])
 
   const appointment5 = new Appointment(new Date('2024-03-25T11:00'), '01:00')
   scheduler.addAppointment(appointment5)
   const availableTime5 = scheduler.getAvailableTimeSlots(appointment5)
-  console.log(availableTime5)
   expect(availableTime5).toEqual(['14:00', '15:00', '16:00'])
 
   const appointment6 = new Appointment(new Date('2024-03-25T14:00'), '02:00')
   scheduler.addAppointment(appointment6)
   const availableTime6 = scheduler.getAvailableTimeSlots(appointment6)
-  console.log(availableTime6)
   expect(availableTime6).toEqual(['16:00'])
 })
